@@ -9,20 +9,25 @@
 
   <body>
 
-    <header>
-      <h1>Welcome to My Gallery</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+<header>
+  <h1>My Art Gallery</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
 
     <main>
 
   <!-- HERO SECTION -->
-  <section class="hero">
+  <section class="hero animate-on-scroll">
     <div class="hero-text">
       <p class="hero-subtitle">Visual Artist & Painter</p>
       <h2 class="hero-title">Art That Speaks<br/>Before You Do</h2>
@@ -30,13 +35,15 @@
       <div class="hero-buttons">
         <a href="gallery.html" class="btn-primary">View Gallery</a>
         <a href="contact.html" class="btn-secondary">Commission a Piece</a>
+        <a href="#intro" class="btn-secondary">See More</a>
       </div>
     </div>
   </section>
 
   <!-- INTRO STRIP -->
   <section class="intro-strip">
-    <div class="strip-item">
+    <section class="intro-strip" id="intro"></section>
+    <div class="strip-item animate-on-scroll">
       <span>🎨</span>
       <p>Original Paintings</p>
     </div>
@@ -61,5 +68,6 @@
       <p>&copy; 2026 My Art Gallery. All rights reserved.</p>
     </footer>
 
+<script src="js/script.js"></script>
   </body>
 </html>

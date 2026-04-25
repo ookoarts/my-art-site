@@ -8,16 +8,20 @@
   </head>
   <body>
 
-    <header>
-      <h1>My Art Gallery</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-
+   <header>
+  <h1>My Art Gallery</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
 <main>
 
   <!-- PAGE HERO -->
@@ -30,11 +34,11 @@
   <!-- ABOUT SECTION -->
   <section class="about-section">
 
-    <div class="about-image">
+    <div class="about-image animate-on-scroll">
       <img src="images/artist.jpg" alt="Portrait of the Artist" />
     </div>
 
-    <div class="about-text">
+    <div class="about-text animate-on-scroll">
       <h3>My Story</h3>
       <p>Write a few sentences about yourself here — where you're from, how you got into art, what drives your work. Keep it personal and honest. People buy from artists they feel connected to.</p>
       <p>Talk about your style, your influences, the kinds of subjects or emotions you explore in your paintings. This is your voice — let it come through naturally.</p>
@@ -45,7 +49,7 @@
 
   <!-- STATS STRIP -->
   <section class="stats-strip">
-    <div class="stat-item">
+    <div class="stat-item animate-on-scroll">
       <h3>50+</h3>
       <p>Original Works</p>
     </div>
@@ -78,5 +82,6 @@
       <p>&copy; 2026 My Art Gallery. All rights reserved.</p>
     </footer>
 
+<script src="js/script.js"></script>
   </body>
 </html>
