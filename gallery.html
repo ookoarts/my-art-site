@@ -18,10 +18,10 @@
     <div class="lightbox-info">
       <h3 class="lightbox-title"></h3>
       <p class="lightbox-meta"></p>
-      <div class="lightbox-actions">
-        <a href="contact.html?subject=purchase" class="btn-primary">Purchase</a>
-        <a href="contact.html?subject=enquire" class="btn-secondary">Enquire</a>
-      </div>
+<div class="lightbox-actions">
+  <a href="contact.html?subject=purchase" class="btn-primary" id="lightbox-purchase">Purchase</a>
+  <a href="contact.html?subject=enquire" class="btn-secondary">Enquire</a>
+</div>
     </div>
   </div>
 </div>
@@ -50,19 +50,28 @@
     <p class="page-desc">A collection of original paintings and visual works. Each piece is available for purchase or as a limited print.</p>
   </section>
 
+  <!-- FILTER BUTTONS -->
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">All Works</button>
+  <button class="filter-btn" data-filter="original">Originals</button>
+  <button class="filter-btn" data-filter="print">Prints</button>
+  <button class="filter-btn" data-filter="commission">Commissions</button>
+</div>
+
   <!-- GALLERY GRID -->
   <section class="gallery-grid">
 
    <div class="art-card animate-on-scroll" 
   data-src="images/art7.jpg" 
   data-title="Untitled No. 1" 
+  data-category="print"
   data-meta="Acrylic on canvas · 24×36in · Original Painting">
   <div class="art-image">
     <img src="images/art7.jpg" alt="Artwork 1" />
     <div class="art-overlay">
       <p class="art-tag">Original Painting</p>
       <div class="overlay-buttons">
-        <a href="contact.html?subject=purchase" class="btn-overlay-primary">Purchase</a>
+        <a href="contact.html?subject=print" class="btn-overlay-primary">Purchase</a>
         <a href="contact.html?subject=enquire" class="btn-overlay-secondary">Enquire</a>
       </div>
     </div>
@@ -75,14 +84,16 @@
 
   <div class="art-card animate-on-scroll" 
   data-src="images/art2.jpg" 
-  data-title="Untitled No. 2" 
+  data-title="Untitled No. 2"
+  data-category="print" 
   data-meta="Acrylic on canvas · 24×36in · Original Painting">
+  
   <div class="art-image">
     <img src="images/art2.jpg" alt="Artwork 2" />
     <div class="art-overlay">
-      <p class="art-tag">Original Painting</p>
+      <p class="art-tag">Limited print</p>
       <div class="overlay-buttons">
-        <a href="contact.html?subject=purchase" class="btn-overlay-primary">Purchase</a>
+        <a href="contact.html?subject=print" class="btn-overlay-primary">Purchase</a>
         <a href="contact.html?subject=enquire" class="btn-overlay-secondary">Enquire</a>
       </div>
     </div>
@@ -96,7 +107,9 @@
     <div class="art-card animate-on-scroll" 
   data-src="images/art3.jpg" 
   data-title="Untitled No. 1" 
+  data-category="original"
   data-meta="Acrylic on canvas · 24×36in · Original Painting">
+  
   <div class="art-image">
     <img src="images/art3.jpg" alt="Artwork 3" />
     <div class="art-overlay">
@@ -116,6 +129,7 @@
    <div class="art-card animate-on-scroll" 
   data-src="images/art4.jpg" 
   data-title="Untitled No. 4" 
+  data-category="original"
   data-meta="Acrylic on canvas · 24×36in · Original Painting">
   <div class="art-image">
     <img src="images/art4.jpg" alt="Artwork 4" />
@@ -135,14 +149,15 @@
 
     <div class="art-card animate-on-scroll" 
   data-src="images/art5.jpg" 
-  data-title="Untitled No. 5" 
+  data-title="Untitled No. 5"
+  data-category="commission" 
   data-meta="Acrylic on canvas · 24×36in · Original Painting">
   <div class="art-image">
     <img src="images/art5.jpg" alt="Artwork 5" />
     <div class="art-overlay">
-      <p class="art-tag">Original Painting</p>
+      <p class="art-tag">Commission Painting</p>
       <div class="overlay-buttons">
-        <a href="contact.html?subject=purchase" class="btn-overlay-primary">Purchase</a>
+        <a href="contact.html?subject=commission" class="btn-overlay-primary">Enquire</a>
         <a href="contact.html?subject=enquire" class="btn-overlay-secondary">Enquire</a>
       </div>
     </div>
@@ -156,6 +171,7 @@
     <div class="art-card animate-on-scroll" 
   data-src="images/art6.jpg" 
   data-title="Untitled No. 6" 
+  data-category="original"
   data-meta="Acrylic on canvas · 24×36in · Original Painting">
   <div class="art-image">
     <img src="images/art6.jpg" alt="Artwork 6" />
@@ -175,14 +191,15 @@
 <div class="art-card">
      <div class="art-card animate-on-scroll" 
   data-src="images/art1.jpg" 
-  data-title="Untitled No. 7" 
+  data-title="Untitled No. 7"
+  data-category="Print" 
   data-meta="Acrylic on canvas · 24×36in · Original Painting">
   <div class="art-image">
     <img src="images/art1.jpg" alt="Artwork 7" />
     <div class="art-overlay">
-      <p class="art-tag">Original Painting</p>
+      <p class="art-tag">Limited print</p>
       <div class="overlay-buttons">
-        <a href="contact.html?subject=purchase" class="btn-overlay-primary">Purchase</a>
+        <a href="contact.html?subject=print" class="btn-overlay-primary">Purchase</a>
         <a href="contact.html?subject=enquire" class="btn-overlay-secondary">Enquire</a>
       </div>
     </div>

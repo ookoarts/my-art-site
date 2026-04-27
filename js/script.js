@@ -92,7 +92,44 @@ if (document.getElementById('lightbox')) {
     if (e.key === 'Escape') closeLightbox();
   });
 }
+// ===== FILTERABLE GALLERY =====
+if (document.querySelector('.filter-bar')) {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const artCards = document.querySelectorAll('.art-card');
 
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      artCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+  
+}// ===== FORM AUTO PRE-FILL =====
+if (document.querySelector('.contact-form')) {
+  const params = new URLSearchParams(window.location.search);
+  const subject = params.get('subject');
+
+  if (subject) {
+    const select = document.getElementById('subject');
+    const options = Array.from(select.options);
+    const match = options.find(opt => 
+      opt.value.toLowerCase() === subject.toLowerCase()
+    );
+    if (match) select.value = match.value;
+  }
+}
 // ===== SCROLL ANIMATIONS =====
 document.addEventListener('DOMContentLoaded', () => {
   const animatedElements = document.querySelectorAll('.animate-on-scroll');
