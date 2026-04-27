@@ -1117,3 +1117,6 @@ body.light-mode .toggle-thumb {
     color: var(--text-primary);
   }
 }
+body.light-mode .hamburger span {
+  background-color: var(--text-primary);
+}
