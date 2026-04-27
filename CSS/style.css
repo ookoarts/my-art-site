@@ -910,3 +910,201 @@ html {
 .art-card.hidden {
   display: none;
 }
+/* ===== CSS VARIABLES FOR THEMING ===== */
+:root {
+  --bg: #0e0e0e;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #f0ece4;
+  --text-secondary: #999;
+  --text-muted: #666;
+  --border: #333;
+  --gold: #c9a84c;
+}
+
+/* Light mode variables */
+body.light-mode {
+  --bg: #f5f0e8;
+  --bg-secondary: #ece7de;
+  --text-primary: #1a1a1a;
+  --text-secondary: #444;
+  --text-muted: #888;
+  --border: #ccc;
+  --gold: #a07830;
+}
+
+/* Apply variables throughout */
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
+
+header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  color: var(--gold);
+}
+
+nav a {
+  color: var(--text-primary);
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--gold);
+}
+
+footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+
+main h2,
+.page-title {
+  color: var(--text-primary);
+}
+
+main p,
+.page-desc,
+.hero-desc {
+  color: var(--text-secondary);
+}
+
+.art-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+}
+
+.art-info h3 {
+  color: var(--text-primary);
+}
+
+.art-info p {
+  color: var(--text-muted);
+}
+
+.intro-strip,
+.stats-strip {
+  background-color: var(--bg-secondary);
+  border-color: var(--border);
+}
+
+.strip-item p,
+.stat-item p {
+  color: var(--text-muted);
+}
+
+.about-text p,
+.service-item p,
+.philosophy p {
+  color: var(--text-secondary);
+}
+
+.about-text h3,
+.philosophy h3,
+.contact-services h3,
+.contact-form-wrap h3 {
+  color: var(--gold);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: var(--bg-secondary);
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+
+.lightbox-overlay {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+.lightbox-content {
+  background: transparent;
+}
+
+.cta-strip {
+  background-color: var(--bg-secondary);
+  border-color: var(--border);
+}
+
+.cta-strip h3 {
+  color: var(--text-primary);
+}
+
+.cta-strip p {
+  color: var(--text-secondary);
+}
+.service-item h4 {
+  color: var(--text-primary);
+}
+.philosophy {
+  background-color: var(--bg);
+}
+
+.philosophy blockquote {
+  color: var(--text-primary);
+  border-left-color: var(--gold);
+}
+
+.philosophy p {
+  color: var(--text-secondary);
+}
+.hero-title {
+  color: var(--text-primary);
+}
+
+.hero-subtitle {
+  color: var(--gold);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--bg) 0%, var(--bg-secondary) 50%, var(--bg) 100%);
+}
+/* ===== THEME TOGGLE SWITCH ===== */
+.theme-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.toggle-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.toggle-track {
+  width: 44px;
+  height: 24px;
+  background-color: var(--border);
+  border-radius: 999px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+body.light-mode .toggle-track {
+  background-color: var(--gold);
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background-color: #f0ece4;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+body.light-mode .toggle-thumb {
+  transform: translateX(20px);
+}
