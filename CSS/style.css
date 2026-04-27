@@ -1107,4 +1107,13 @@ body.light-mode .toggle-track {
 
 body.light-mode .toggle-thumb {
   transform: translateX(20px);
+}@media (max-width: 768px) {
+  body.light-mode nav {
+    background-color: var(--bg-secondary);
+    border-left: 1px solid var(--border);
+  }
+
+  body.light-mode nav a {
+    color: var(--text-primary);
+  }
 }
