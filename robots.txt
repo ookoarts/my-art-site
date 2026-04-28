@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://galleryooko.netlify.app/sitemap.xml
