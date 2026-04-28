@@ -1120,3 +1120,159 @@ body.light-mode .toggle-thumb {
 body.light-mode .hamburger span {
   background-color: var(--text-primary);
 }
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  margin-top: 80px;
+}
+
+.footer-content {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 40px 40px;
+}
+
+.footer-brand {
+  flex: 2;
+  min-width: 220px;
+}
+
+.footer-brand h3 {
+  font-size: 1.2rem;
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.footer-brand p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  max-width: 280px;
+}
+
+.footer-contact,
+.footer-social {
+  flex: 1;
+  min-width: 160px;
+}
+
+.footer-contact h4,
+.footer-social h4 {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.footer-contact ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-contact a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: var(--gold);
+}
+
+/* ===== CONTACT LINKS ===== */
+.contact-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-link i {
+  font-size: 1.1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.contact-link:hover {
+  color: var(--gold);
+}
+
+/* ===== SOCIAL BUTTONS ===== */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+.social-btn i {
+  font-size: 1.1rem;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+}
+
+.social-btn.instagram:hover {
+  border-color: #e1306c;
+  color: #e1306c;
+}
+
+.social-btn.facebook:hover {
+  border-color: #1877f2;
+  color: #1877f2;
+}
+
+.social-btn.whatsapp:hover {
+  border-color: #25d366;
+  color: #25d366;
+}
+
+.social-btn.gmail:hover {
+  border-color: #ea4335;
+  color: #ea4335;
+}
+
+/* ===== FOOTER BOTTOM ===== */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 40px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* ===== MOBILE FOOTER ===== */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px 20px;
+  }
+}
