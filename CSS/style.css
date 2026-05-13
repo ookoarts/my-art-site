@@ -933,12 +933,12 @@ html {
 
 /* Light mode variables */
 body.light-mode {
-  --bg: #f5f0e8;
-  --bg-secondary: #ece7de;
+  --bg: #ffffff;
+  --bg-secondary: #f5f5f5;
   --text-primary: #1a1a1a;
   --text-secondary: #444;
   --text-muted: #888;
-  --border: #ccc;
+  --border: #e0e0e0;
   --gold: #a07830;
 }
 
