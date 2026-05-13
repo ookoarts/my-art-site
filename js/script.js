@@ -105,22 +105,29 @@ if (document.getElementById('lightbox')) {
     if (e.key === 'Escape') closeLightbox();
   });
 }
-// ===== FILTERABLE GALLERY =====
+/// ===== FILTERABLE GALLERY =====
 if (document.querySelector('.filter-bar')) {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const artCards = document.querySelectorAll('.art-card');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-
-      // Update active button
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
       const filter = btn.getAttribute('data-filter');
 
       artCards.forEach(card => {
-        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+        const category = card.getAttribute('data-category');
+
+        if (filter === 'all') {
+          // Hide commissions from All view
+          if (category === 'commission') {
+            card.classList.add('hidden');
+          } else {
+            card.classList.remove('hidden');
+          }
+        } else if (category === filter) {
           card.classList.remove('hidden');
         } else {
           card.classList.add('hidden');
@@ -129,7 +136,15 @@ if (document.querySelector('.filter-bar')) {
     });
   });
 
-}// ===== FORM AUTO PRE-FILL =====
+  // Hide commissions on initial load
+  artCards.forEach(card => {
+    if (card.getAttribute('data-category') === 'commission') {
+      card.classList.add('hidden');
+    }
+  });
+}
+
+// ===== FORM AUTO PRE-FILL =====
 if (document.querySelector('.contact-form')) {
   const params = new URLSearchParams(window.location.search);
   const subject = params.get('subject');
