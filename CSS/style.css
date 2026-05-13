@@ -1328,4 +1328,20 @@ footer {
     object-fit: cover;
     object-position: center top;
   }
+}@media (max-width: 768px) {
+  nav.active {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+
+  nav.active a {
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+  }
 }
