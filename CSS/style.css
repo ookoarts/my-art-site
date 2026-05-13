@@ -1032,6 +1032,33 @@ main p,
   background: rgba(0, 0, 0, 0.95);
 }
 
+body.light-mode .lightbox-overlay {
+  background: rgba(255, 255, 255, 0.97);
+}
+
+body.light-mode .lightbox-title {
+  color: #1a1a1a;
+}
+
+body.light-mode .lightbox-meta {
+  color: #666;
+}
+
+body.light-mode .lightbox-close,
+body.light-mode .lightbox-prev,
+body.light-mode .lightbox-next {
+  border-color: #ccc;
+  color: #1a1a1a;
+}
+
+body.light-mode .lightbox-close:hover,
+body.light-mode .lightbox-prev:hover,
+body.light-mode .lightbox-next:hover {
+  border-color: #a07830;
+  color: #a07830;
+}
+
+
 .lightbox-content {
   background: transparent;
 }
