@@ -31,13 +31,20 @@ header h1 {
 
 /* ===== NAVIGATION ===== */
 nav a {
-  color: #f0ece4;
+  color: var(--text-primary);
   text-decoration: none;
   margin-left: 30px;
   font-size: 0.9rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 nav a:hover {
@@ -1317,23 +1324,5 @@ footer {
     height: 250px;
     object-fit: cover;
     object-position: center top;
-  }
-}@media (max-width: 768px) {
-  nav a {
-    text-align: center;
-    width: 100%;
-    display: block;
-  }
-}@media (max-width: 768px) {
-  nav.active {
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  nav.active a {
-    text-align: center !important;
-    margin: 0 auto !important;
-    display: block !important;
-    width: 100% !important;
   }
 }
