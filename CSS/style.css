@@ -1403,4 +1403,24 @@ footer {
     width: 100%;
     box-sizing: border-box;
   }
+}@media (max-width: 768px) {
+  .contact-section {
+    padding: 0 24px !important;
+    margin: 40px auto !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-services,
+  .contact-form-wrap {
+    width: 100% !important;
+    min-width: unset !important;
+    box-sizing: border-box !important;
+  }
+
+  .service-item h4,
+  .service-item p,
+  .form-group label {
+    text-align: left !important;
+  }
 }
