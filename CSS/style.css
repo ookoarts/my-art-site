@@ -1380,4 +1380,27 @@ footer {
     display: block !important;
     padding: 0 !important;
   }
+}@media (max-width: 768px) {
+  .contact-section {
+    padding: 0 20px;
+    margin: 40px auto;
+    gap: 40px;
+  }
+
+  .contact-services,
+  .contact-form-wrap {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .service-item {
+    gap: 12px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
