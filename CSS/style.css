@@ -14,12 +14,12 @@ body {
 
 /* ===== HEADER ===== */
 header {
-  background-color: #1a1a1a;
+  background-color: var(--bg-secondary);
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--border);
 }
 
 header h1 {
@@ -1286,4 +1286,14 @@ footer {
 .site-logo {
   height: 100px;
   width: auto;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .site-logo {
+    height: 70px;
+    width: auto;
+  }
 }
