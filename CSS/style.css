@@ -1355,4 +1355,29 @@ footer {
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+}@media (max-width: 768px) {
+  .philosophy {
+    padding: 0 24px;
+  }
+
+  .philosophy blockquote {
+    font-size: 1rem;
+    padding-left: 16px;
+    border-left: 2px solid #c9a84c;
+  }
+}@media (max-width: 768px) {
+  nav {
+    align-items: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  nav a {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    padding: 0 !important;
+  }
 }
