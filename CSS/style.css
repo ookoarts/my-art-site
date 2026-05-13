@@ -1324,4 +1324,16 @@ footer {
     width: 100%;
     display: block;
   }
+}@media (max-width: 768px) {
+  nav.active {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  nav.active a {
+    text-align: center !important;
+    margin: 0 auto !important;
+    display: block !important;
+    width: 100% !important;
+  }
 }
