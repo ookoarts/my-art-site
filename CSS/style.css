@@ -1318,4 +1318,10 @@ footer {
     object-fit: cover;
     object-position: center top;
   }
+}@media (max-width: 768px) {
+  nav a {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
 }
