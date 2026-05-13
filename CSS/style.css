@@ -1344,4 +1344,15 @@ footer {
     width: 100% !important;
     display: block !important;
   }
+  @media (max-width: 768px) {
+  .about-section {
+    padding: 0 20px;
+    margin: 40px auto;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }
